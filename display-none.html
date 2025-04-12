@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display none</title>
+    <style>
+        .menubar {
+            display: inline-block;
+        }
+
+        .menu {
+            background-color: aqua;
+            color: black;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .menulist {
+            display: none;
+            position: absolute;
+            background-color: aqua;
+            z-index: 1;
+        }
+
+        /* a disini adalah elemen <a></a> atau link */
+        .menulist a {
+            color: black;
+            text-decoration: none;
+            display: block;
+            padding: 10px;
+        }
+
+        /* a disini adalah elemen <a></a> atau link ketika di hover*/
+        .menulist a:hover{
+            background-color: bisque;
+        }
+
+        /* ketika menubar dihover background berubah */
+        .menubar:hover .menu{
+            background-color: bisque;
+        }
+
+        /* menampilkan menulist ketika hover menubar */
+        .menubar:hover .menulist {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="menubar">
+        <button class="menu">Social Media</button>
+        <div class="menulist">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+            <a href="#">Tiktok</a>
+            <a href="#">Youtube</a>
+        </div>
+    </div>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda suscipit ad rerum sit iste amet quos mollitia eligendi alias odio nemo nulla, voluptas minima atque, tenetur similique maxime dolor perspiciatis!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores voluptate deleniti maiores iusto minus nesciunt molestiae quis numquam. Ab adipisci maiores vero eos esse est culpa sit ipsam doloremque cupiditate!</p>
+</body>
+</html>

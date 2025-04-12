@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid start end</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: [colLine1] 150px [colLine2] auto [colLine3] 150px;
+            grid-template-rows: [rLine1] auto [rLine2] auto [rLine3] auto;
+        } 
+
+        .header{
+            background-color: ghostwhite;
+            padding: 8px;
+            width: auto;
+            height: auto;
+            margin: 5px;
+            grid-column-start: colLine1;
+            grid-column-end: colLine4;
+            grid-row-start: rLine1;
+            grid-row-end: rLine1;
+        }
+
+        .content{
+            background-color: rgb(241, 241, 241);
+            grid-area: content;
+            grid-column-start: colLine2;
+            grid-column-end: colLine3;
+            grid-row-start: rLine2;
+            grid-row-end: rLine3;
+        }
+
+        .footer{
+            background-color: rgb(231, 231, 231);
+            padding: 8px;
+            width: auto;
+            height: auto;
+            grid-column-start: colLine1;
+            grid-column-end: colLine4;
+            grid-row-start: rLine3;
+            grid-row-end: rLine4;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            Selamat Datang Di Kelas Belajar HTML
+        </div>
+        <div class="content">
+            <h1>Enzokulin Samsidan</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi quo nobis earum ipsum beatae, reprehenderit explicabo rem quam doloribus ea, facilis sunt, eaque iste ab! Similique consectetur consequuntur a tenetur.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum velit natus sed facere explicabo nemo iure obcaecati debitis molestiae atque dicta architecto commodi, doloribus ipsam esse facilis ipsum expedita! Voluptatem?</p>
+        </div>
+        <div class="footer">
+            Developer Frontend
+        </div>
+    </div>
+</body>
+</html>

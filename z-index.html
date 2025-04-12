@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>z index</title>
+    <style>
+        .content{
+            background-color: aqua;
+            width: 150px;
+        }
+
+        .content1{
+            z-index: -1;
+            position: absolute;
+            width: 150px;
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <div class="content content1">
+        <h1>content1</h1>
+    </div>
+    <div class="content content2">
+        <h1>content2</h1>
+    </div>
+    <div class="content content2">
+        <h1>content3</h1>
+    </div>
+</body>
+</html>
