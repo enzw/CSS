@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content</title>
+    <style>
+        .content {
+            content: url(images/enzo.jpg);
+        }
+
+        /* hanya bisa mengganti text ke img, kalo text aja maka before after ada di samping kanan/kirinya */
+
+        .content::after {
+            content: "enzo";
+        }
+
+        .content::before {
+            content: "saskia";
+        }
+    </style>
+</head>
+<body>
+    <p class="content">Ini content</p>
+</body>
+</html>

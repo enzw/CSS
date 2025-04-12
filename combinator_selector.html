@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinator</title>
+    <style>
+        /* descendant selector : semua p dalam div terselect */
+        div p {
+            color: rebeccapurple;
+        }
+
+        /* child selector : khusus p didalam div yang tidak di dalam sesuatu (p diluar article) */
+        div > p {
+            color: blue;
+        }
+
+        /* adjacent  sibling selector : memilih 1(satu) elemen setelah elemen yang dipilih / (mencari satu elemen sejajar dengan div) */
+        div + p {
+            text-transform: uppercase;
+        }
+
+        /* general  sibling selector : semua elemen setelah elemen yang dipilih / (mencari elemen sejajar dengan div) */
+        div ~ p {
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <article>
+            <p>Ini adalah judul</p>
+        </article>
+        <p>Ini adalah judul</p>
+    </div>
+    <p>Ini bukan judul</p>
+    <p>Ini bukan judul</p>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <style>
+        body {
+            counter-set: judul;
+            /* counter-set: subjudul; */
+        }
+
+        h1 {
+            counter-increment: judul;
+            counter-reset: subjudul;
+        }
+
+        h2 {
+            counter-increment: subjudul;
+        }
+
+        h1::before {
+            content: counter(judul) ". ";
+        }
+
+        h2::before {
+            content: counter(judul) ". " counter(subjudul) ". ";
+        }
+    </style>
+</head>
+<body>
+    <h1>Ini judul</h1>
+    <h2>Ini subjudul</h2>
+    <h2>Ini subjudul</h2>
+    <h2>Ini subjudul</h2>
+    <h1>Ini judul</h1>
+    <h2>Ini subjudul</h2>
+    <h2>Ini subjudul</h2>
+    <h2>Ini subjudul</h2>
+    <h1>Ini judul</h1>
+    <h2>Ini subjudul</h2>
+    <h2>Ini subjudul</h2>
+    <h2>Ini subjudul</h2>
+</body>
+</html>

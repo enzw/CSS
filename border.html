@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>border</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        div {
+            padding: 0;
+            margin: 0;
+            background-color: pink;
+        }
+
+        p {
+            padding: 0;
+            margin: 0;
+        }
+
+        .article1 {
+            height: 250px;
+            background-color: orange;
+            width: 250px;
+            padding: 10px 20px 10px 20px;
+            margin: 20px;
+            text-align: justify;
+        /* border : mengambil space/menambah ukuran blok */
+            border-style: groove solid dotted dashed;
+            border-width: 5px 5px 9px 10px;
+            border-radius: 32px;
+        }
+
+        /* margin jika bertemu margin maka dia ambil yang paling tinggi */
+
+        .article2 {
+            height: 150px;
+            background-color: pink;
+            padding: 20px;
+            margin: 30px;
+            width: 300px;
+        /* border */
+            border-right-style: solid;
+            border-right-width: 90px;
+            border-radius: 32px 0px 10px 15px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="article1">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit molestiae nostrum officia inventore id incidunt ab architecto autem aperiam necessitatibus maiores eius modi, iure, nesciunt fuga similique reiciendis rem expedita.</p>
+    </div>
+    <div class="article2">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum cum illum fugiat quas. Fuga ipsum, facere, perferendis aperiam hic voluptate possimus amet eius cupiditate libero magnam nostrum alias doloribus minima.</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+/* contoh type selector */
+
+h1 {
+    color: red !important;
+    font-size: 20px;
+}
+
+h2 {
+    color: aqua;
+    font-size: 15px;
+}
+
+/* contoh id selector */
+
+#hytam {
+    color: black;
+}
+
+/* contoh class selector */
+
+.manis {
+    text-transform: lowercase;
+}
+
+/* contoh selector list */
+
+h1, h2, #title {
+    font: bold;
+    color: royalblue;
+}
+
+/* test buat komentar */

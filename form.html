@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+        #nama, #email, #pass {
+            border-color: black;
+            border-radius: 18px;
+            width: 245px;
+            height: 32px;
+            padding: 8px 12px 8px 12px;
+            font-size: 14pt;
+            outline: none;
+        }
+
+        #nama:focus, #email:focus, #pass:focus{
+            border-color: darkcyan;
+            background-color: blue;
+            color: white;
+        }
+
+        input:required {
+            text-transform: uppercase;
+        }
+
+        #Login {
+            border-style: solid;
+            border-color: blue;
+            border-width: 2px;
+            padding: 10px;
+            border-radius: 12px;
+            width: 245px;
+            background-color: white;
+        }
+
+        #Login:hover {
+            border: none;
+            background-color: lightblue;
+            color: white;
+            padding: 10px;
+            width: 245px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <form action="" method="post">
+        <label for="nama">Name :
+            <input type="text" name="nama" required id="nama"> 
+        </label><br>
+        <label for="email">Email :
+            <input type="text" name="email" required id="email">
+        </label><br>
+        <label for="pass">Password :
+            <input type="password" name="pass" required id="pass">
+        </label><br>
+        <br>
+        <input id="Login" type="submit" value="Login">
+    </form>
+</body>
+</html>

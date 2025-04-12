@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute</title>
+    <style>
+        /* select yang ada target tanpa nilai/value */
+        a[target] {
+            text-transform: uppercase;
+        }
+
+        /* select yang ada target dengan nilai/value */
+        a[target="_blank"] {
+            color: teal;
+        }
+
+        /* select yang ada kata-kata "belajar" (tidak digabung dengan kata lain) dalam title */
+        p[title~="belajar"] {
+            color: green;
+        }
+
+        /* select yang ada kata-kata "belajar" aja dalam title */
+        p[title="belajar"] {
+            text-transform: capitalize;
+        }
+
+        /* select yang ada kata-kata "belajar" - atau belajar aja dalam title */
+        p[title|="belajar"] {
+            text-transform: uppercase;
+        }
+
+        /* select yang diawali kata-kata "belajar" dalam title */
+        p[title^="belajar"] {
+            text-transform: lowercase;
+        }
+
+        /* select yang diakhiri kata-kata "belajar" dalam title */
+        p[title$="belajar"] {
+            color: red;
+        }
+
+        /* select yang ada kata-kata "belajar" (bisa digabung dengan kata lain) dalam title */
+        p[title*="belajar"] {
+            color: red;
+        }
+
+        /* select yang ada kata-kata "belajar" (bisa digabung dengan kata lain) dalam title tanpa tag*/
+        [title*="belajar"] {
+            color: brown;
+        }
+
+    </style>
+</head>
+<body>
+    <a href="" target="_blank">contoh a</a>
+    <a href="">contoh b</a>
+    <a href="" target="">contoh c</a>
+    <a href="">contoh d</a>
+    <p title="belajar pemrograman">pemrograman</p>
+    <!-- (belajar saja, jika digabung maka tidak terdetect select title~="") -->
+    <p title="belajari">menggambar</p>
+    <p title="belajar">mewing</p>
+    <p title="belajar-ikan hewan">bermusik</p>
+    <p title="ikan hewan belajar">berirama</p>
+    <span title="ikan hiu belajar">ikan lele</span>
+</body>
+</html>
